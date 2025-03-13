@@ -6,8 +6,8 @@
 */
 
 :root {
-  --after-opacity: 1;
-  --after-brightness: 1;
+  --after-opacity: 0.52;
+  --after-brightness: 0.67;
   --skew-x: 0deg;
   --skew-y: 0deg;
 }
@@ -302,7 +302,7 @@ p {
   width: 100%;
   height: 50vw;
   object-fit: cover;
-  filter: sepia(0.6) grayscale(0.2) brightness(0.3);
+  filter: sepia(0.51) grayscale(0.51) brightness(0.67);
   position: absolute;
   transition: filter 0.1s ease-in-out;
 }
