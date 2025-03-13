@@ -87,13 +87,16 @@ window.addEventListener("load", function () {
       }, 3000);
   }
 
-  let headerPart1 = document.querySelector('.header-part1');
-  let profile = document.querySelectorAll('.profile');
-
-
-  mouseTilt(headerPart1, profile[0], 20, 20);
-  mouseTilt(headerPart1, profile[1], -20, -20);
-  mouseTilt(headerPart1, profile[2], 20, 20);
+  if (window.matchMedia("(min-width: 1201px)").matches) {
+    let headerPart1 = document.querySelector('.header-part1');
+    let profile = document.querySelectorAll('.profile');
+  
+  
+    mouseTilt(headerPart1, profile[0], 20, 20);
+    mouseTilt(headerPart1, profile[1], -20, -20);
+    mouseTilt(headerPart1, profile[2], 20, 20);
+  }
+  
 
   const fixedDiv = document.getElementById("go-back");
   const triggerDiv = document.getElementById("all-parts");
