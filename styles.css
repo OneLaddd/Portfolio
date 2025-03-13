@@ -40,6 +40,9 @@ body {
   transition: opacity 1s ease;
 }
 
+.lazy-bg.bg-loaded {
+  transition: background 0.3s ease-in-out;
+}
 
 h1 {
   font-size: 6.5vw;
@@ -424,31 +427,26 @@ p {
 }
 
 .header-selection-wrapper:nth-child(1) .header-selection {
-  background: url("assets/header/selection/1.webp");
   background-size: cover;
   background-position: center center;
 }
 
 .header-selection-wrapper:nth-child(2) .header-selection {
-  background: url("assets/header/selection/2.webp");
   background-size: cover;
   background-position: center center;
 }
 
 .header-selection-wrapper:nth-child(3) .header-selection {
-  background: url("assets/header/selection/3.webp");
   background-size: cover;
   background-position: center center;
 }
 
 .header-selection-wrapper:nth-child(4) .header-selection {
-  background: url("assets/header/selection/4.webp");
   background-size: cover;
   background-position: center center;
 }
 
 .header-selection-wrapper:nth-child(5) .header-selection {
-  background: url("assets/header/selection/5.webp");
   background-size: cover;
   background-position: center center;
 }
@@ -620,21 +618,14 @@ p {
 .mapua-profile {
   width: 80vw;
   height: 40vw;
-  background: url("assets/aboutMe/mapua.webp");
   background-size: cover;
   background-position: 2vw -6vw;
 }
 
-.about-me-illustration-1 { background-image: url('assets/aboutMe/1.webp'); }
 .about-me-illustration-2 { 
-  background-image: url('assets/aboutMe/2.webp');
   filter: drop-shadow(0.5px 0.5px 0 rgb(176, 50, 50)) drop-shadow(1px 1px 0 rgb(176, 50, 50));
 }
-.about-me-illustration-3 { background-image: url('assets/aboutMe/3.webp'); }
-.about-me-illustration-4 { background-image: url('assets/aboutMe/4.webp'); }
-.about-me-illustration-5 { background-image: url('assets/aboutMe/5.webp'); }
 .about-me-illustration-6 { 
-  background-image: url('assets/aboutMe/6.webp');
   filter: drop-shadow(0.5px 0.5px 0 rgb(176, 50, 50)) drop-shadow(1px 1px 0 rgb(176, 50, 50));
 }
 
@@ -758,37 +749,31 @@ p {
 }
 
 .course-picture-1{
-  background: url("assets/coursework/surveyform.webp");
   background-size: cover;
   background-position: center;
 }
 
 .course-picture-2 {
-  background: url("assets/coursework/cs50.webp");
   background-size: cover;
   background-position: center;
 }
 
 .course-picture-3 {
-  background: url("assets/coursework/tomato.webp");
   background-size: cover;
   background-position: center;
 }
 
 .course-picture-4 {
-  background: url("assets/coursework/research.webp");
   background-size: cover;
   background-position: center;
 }
 
 .course-picture-5 {
-  background: url("assets/coursework/prototype.webp");
   background-size: cover;
   background-position: center;
 }
 
 .course-picture-6 {
-  background: url("assets/coursework/portfolio.webp");
   background-size: cover;
   background-position: top;
 }
@@ -918,97 +903,81 @@ p {
 }
 
 .project-no-1-box-1 {
-  background: url("assets/project/project-1/1.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-1-box-2 {
-  background: url("assets/project/project-1/2.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-1-box-3 {
-  background: url("assets/project/project-1/3.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-1-box-4 {
-  background: url("assets/project/project-1/4.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-1-box-5 {
-  background: url("assets/project/project-1/5.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-2-box-1 {
-  background: url("assets/project/project-2/1.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-2-box-2 {
-  background: url("assets/project/project-2/2.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-2-box-3 {
-  background: url("assets/project/project-2/3.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-2-box-4 {
-  background: url("assets/project/project-2/4.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-2-box-5 {
-  background: url("assets/project/project-2/5.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-3-box-1 {
-  background: url("assets/project/project-3/1.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-3-box-2 {
-  background: url("assets/project/project-3/2.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-3-box-3 {
-  background: url("assets/project/project-3/3.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-3-box-4 {
-  background: url("assets/project/project-3/4.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-3-box-5 {
-  background: url("assets/project/project-3/5.webp");
   background-size: cover;
   background-position: center;
 }
 
 .project-no-3-box-6 {
-  background: url("assets/project/project-3/6.webp");
   background-size: cover;
   background-position: center 7em;
 }
@@ -1050,7 +1019,6 @@ p {
 }
 
 .other-project1 {
-  background: url("assets/project/others/1.webp");
   height: 20em;
   width: 10em;
   top: 20%;
@@ -1062,7 +1030,6 @@ p {
 }
 
 .other-project2 {
-  background: url("assets/project/others/2.webp");
   height: 20em;
   width: 20em;
   top: 75%;
@@ -1074,7 +1041,6 @@ p {
 }
 
 .other-project3 {
-  background: url("assets/project/others/3.webp");
   height: 15em;
   width: 10em;
   top: 65%;
@@ -1086,7 +1052,6 @@ p {
 }
 
 .other-project4 {
-  background: url("assets/project/others/4.webp");
   height: 10em;
   width: 10em;
   top: 50%;
@@ -1098,7 +1063,6 @@ p {
 }
 
 .other-project5 {
-  background: url("assets/project/others/5.webp");
   height: 13em;
   width: 13em;
   top: 90%;
@@ -1110,7 +1074,6 @@ p {
 }
 
 .other-project6 {
-  background: url("assets/project/others/6.webp");
   height: 35em;
   width: 17em;
   top: 50%;
@@ -1123,7 +1086,6 @@ p {
 }
 
 .other-project7 {
-  background: url("assets/project/others/7.webp");
   height: 20em;
   width: 10em;
   top: 45%;
@@ -1282,7 +1244,6 @@ p {
 }
 
 .back {
-  background: url("assets/journey/tarot.png");
   background-size: cover;
   background-position: center;
   transform: rotateY(180deg);
@@ -1303,7 +1264,6 @@ p {
 }
 
 .journey-card1 .content .front {
-  background: url("assets/journey/1.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1315,7 +1275,6 @@ p {
 }
 
 .journey-card2 .content .front {
-  background: url("assets/journey/2.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1327,7 +1286,6 @@ p {
 }
 
 .journey-card3 .content .front {
-  background: url("assets/journey/3.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1339,7 +1297,6 @@ p {
 }
 
 .journey-card4 .content .front {
-  background: url("assets/journey/4.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1351,7 +1308,6 @@ p {
 }
 
 .journey-card5 .content .front {
-  background: url("assets/journey/5.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1363,7 +1319,6 @@ p {
 }
 
 .journey-card6 .content .front {
-  background: url("assets/journey/6.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1375,7 +1330,6 @@ p {
 }
 
 .journey-card7 .content .front {
-  background: url("assets/journey/7.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1387,7 +1341,6 @@ p {
 }
 
 .journey-card8 .content .front {
-  background: url("assets/journey/8.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1399,7 +1352,6 @@ p {
 }
 
 .journey-card9 .content .front {
-  background: url("assets/journey/9.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1411,7 +1363,6 @@ p {
 }
 
 .journey-card10 .content .front {
-  background: url("assets/journey/10.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1423,7 +1374,6 @@ p {
 }
 
 .journey-card11 .content .front {
-  background: url("assets/journey/11.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1435,7 +1385,6 @@ p {
 }
 
 .journey-card12 .content .front {
-  background: url("assets/journey/12.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1530,52 +1479,44 @@ a {
 }
 
 .linkedin {
-  background: url("assets/contact/linkedin.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .linkedin-logo {
-  background: url("assets/contact/4.png");
   background-color: rgb(176, 50, 50);
   background-size: cover;
   z-index: 3;
 }
 
 .github {
-  background: url("assets/contact/github.webp");
   background-size: cover;
   background-position: center;
 }
 
 .github-logo {
-  background: url("assets/contact/1.png");
   background-color: rgb(176, 50, 50);
   background-size: cover;
   z-index: 3;
 }
 
 .fb {
-  background: url("assets/contact/fb.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .fb-logo {
-  background: url("assets/contact/2.png");
   background-color: rgb(176, 50, 50);
   background-size: cover;
   z-index: 3;
 }
 
 .gmail {
-  background: url("assets/contact/gmail.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .gmail-logo {
-  background: url("assets/contact/3.png");
   background-color: rgb(176, 50, 50);
   background-size: cover;
   border-radius: 50%;

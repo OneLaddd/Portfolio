@@ -100,22 +100,44 @@ window.addEventListener("load", function () {
 
   const fixedDiv = document.getElementById("go-back");
   const triggerDiv = document.getElementById("all-parts");
+  const lazyDivs = document.querySelectorAll(".lazy-bg");
 
-  const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            fixedDiv.style.opacity = 1;
-            fixedDiv.style.pointerEvents = 'initial';
-          } else {
-            fixedDiv.style.opacity = 0;
-            fixedDiv.style.pointerEvents = '';
-          }
-      });
-    }, { threshold: 0 }); // Triggers as soon as it appears
+  const lazyObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            let div = entry.target;
+            let bgUrl = div.getAttribute("data-bg");
 
-    observer.observe(triggerDiv);
+            if (bgUrl) {
+                div.style.backgroundImage = `url("${bgUrl}")`;
+                div.classList.add("bg-loaded");
+            }
+
+            lazyObserver.unobserve(div); 
+        }
+    });
+  }, { rootMargin: "150% 0px 150% 0px" });
+
+  const fixedObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.target === triggerDiv) {
+            if (entry.isIntersecting) {
+                fixedDiv.style.opacity = 1;
+                fixedDiv.style.pointerEvents = 'initial';
+            } else {
+                fixedDiv.style.opacity = 0;
+                fixedDiv.style.pointerEvents = '';
+            }
+        }
+    });
+  }, { threshold: 0 });
+
+  fixedObserver.observe(triggerDiv);
+  lazyDivs.forEach(div => lazyObserver.observe(div));
 
   let resizeTimeout;
+  
+  
   window.addEventListener("resize", () => {
       clearTimeout(resizeTimeout);
 
